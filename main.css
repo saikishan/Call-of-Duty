@@ -1,0 +1,23 @@
+body{
+    background-image: url("images/bg.svg");
+    background-size:cover; 
+}
+#canonbase{
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+#canonBarrel{
+    position: absolute;
+    transform-origin:center bottom;
+    width: 25px;
+    z-index: 1;
+}
+.bullet{
+    position: absolute;
+    z-index: 0;
+    width: 0.5%;
+}
+.chopper{
+    width: 5%;
+}
