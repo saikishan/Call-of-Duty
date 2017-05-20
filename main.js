@@ -3,9 +3,6 @@ $(document).ready(function(){
     canbase.setup();
     firangi = new Barrel($(window).width()/2);
     firangi.setup();
-    enemies = new Enemy(25);
-    enemies.setup();
-    enemies.attack();
 }).keydown(function(k){
     if(k.which===37){//left arrow
         k.preventDefault();
