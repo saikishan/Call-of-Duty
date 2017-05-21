@@ -19,5 +19,10 @@ body{
     width: 0.5%;
 }
 .chopper{
+    position: absolute;
     width: 5%;
+}
+.trooper{
+    position: absolute;
+    width: 0.8%;
 }

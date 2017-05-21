@@ -22,7 +22,7 @@ Bullet.prototype.setup=function(){
     }
     console.log(xdest);
     console.log(ydest);
-    var b = $('<img src="file:///E:/paratroop/images/bullet.svg" class="bullet">').css({left:(this.x)+"px",bottom:"14%"})
+    var b = $('<img src="images/bullet.svg" class="bullet">').css({left:(this.x)+"px",bottom:"14%"})
     .load(function(){
         $(this).animate({
             top:ydest+"%",

@@ -3,6 +3,17 @@ $(document).ready(function(){
     canbase.setup();
     firangi = new Barrel($(window).width()/2);
     firangi.setup();
+    setInterval(function(){
+        var i = (Math.floor(Math.random()*10)%4)+1;
+        var af = new Helicopter(i,"images/helicopter0"+i+".gif");
+        af.setup();
+    },2000);
+    setInterval(function(){
+        var lanch = $(".chopper:first").position();
+        console.log(lanch);
+        var tf = new Trooper(lanch.left,lanch.top);
+        tf.setup();
+    },2200)
 }).keydown(function(k){
     if(k.which===37){//left arrow
         k.preventDefault();
