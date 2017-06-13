@@ -5,7 +5,6 @@ var Helicopter = function(no,imgsrc){
 }
 Helicopter.prototype.setup = function(){
    var b = $("<img class='chopper enemy' src='"+this.src+"'>").css("left",this.xpos+"%")
-   console.log(this.id);
    if(this.id<=2)
    b.load(function(){
         $(this).animate({'left':"95%"},5000,"linear",function(){

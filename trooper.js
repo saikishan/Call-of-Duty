@@ -8,9 +8,10 @@ Trooper.prototype.setup = function(){
         $(this).animate({'top':"50%"},4000,"linear",function(){
             $(this).attr('src',"images/paratrooper.svg");
             $(this).css('width','3%');
-            $(this).animate({'top':"90%"},5000,"linear",function(){
+            $(this).animate({'top':"85%"},5000,"linear",function(){
                 $(this).css('width','0.8%');
               $(this).attr('src',"images/trooper.svg");
+              $(this).remove();
             });
         });
     });

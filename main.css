@@ -26,3 +26,74 @@ body{
     position: absolute;
     width: 0.8%;
 }
+#verdict {
+    font-size: 200%;
+    text-align: center;
+    font-family: "Lato";
+    margin-top: 50px;
+    color: #999999;
+    font-variant: small-caps;
+    position: fixed;
+    top: 250px;
+    left: 50%;
+    width: 70%;
+    transform: translateX(-50%);
+    color: #cccccc;
+}
+.modal {
+    display: none;
+    /*initially hidden */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/ opacity */
+}
+#reset-btn {
+    position: fixed;
+    top: 400px;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    transform: translateX(-50%);
+}
+.btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #cccccc;
+    margin: 5px 10px;
+    font-size: 120%;
+    color: #cccccc;
+    background-color: #444444;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #cccccc;
+    color: #444444;
+}
+
+.btn:active {
+    background-color: #99cc99;
+    color: #444444;
+}
+
+.btn:focus {
+    outline: #cccccc;
+}
